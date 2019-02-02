@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript orientado a objetos</title>
+    <!-- BOOTSTRAP CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a href="#" class="navbar-brand">Product App</a>
+    </nav>
+
+    <div class="container">
+        <div id="app" class="row mt-5 justify-content-center">
+            <div class="col-lg-4 col-sm-8 mb-5">
+                <div class="card">
+                    <div class="card-header text-center">
+                            <h4>Añade un producto</h4>
+                    </div>
+                    <form id="formulario" class="card-body">
+                        <div class="input-group mb-3">
+                            <input type="text" id="nombre" placeholder="Nombre del producto" class="form-control">
+                        </div>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text mb-3">$</span>
+                            </div>
+                            <input value="100000" min="100" step="100" type="number" id="precio" placeholder="Precio" class="form-control">
+                        </div>
+                        <div class="input-group mb-3">
+                            <input value="2019" min="1980" max="2019" type="number" id="year" placeholder="Año" class="form-control">
+                        </div>
+                        <div class="input-group">
+                            <button type="submit" class="btn btn-outline-primary btn-block">Guardar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-lg-8" id="lista-productos"></div>
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
