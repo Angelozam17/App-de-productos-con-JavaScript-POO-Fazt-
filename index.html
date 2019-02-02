@@ -28,7 +28,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text mb-3">$</span>
                             </div>
-                            <input value="100000" min="100" step="100" type="number" id="precio" placeholder="Precio" class="form-control">
+                            <input min="100" step="100" type="number" id="precio" placeholder="Precio" class="form-control">
                         </div>
                         <div class="input-group mb-3">
                             <input value="2019" min="1980" max="2019" type="number" id="year" placeholder="Año" class="form-control">
@@ -39,11 +39,36 @@
                     </form>
                 </div>
             </div>
+            <!-- Listado de productos -->
+            <div class="col-lg-8" id="lista-productos">
 
-            <div class="col-lg-8" id="lista-productos"></div>
+                <div class="card mb-3 justify-content-between">
+                    <div class="card-body">
+                        <h6 class="lead d-inline-block">
+                            <strong>Nombre del producto: </strong>
+                            laborum odit optio
+                            </h6>
+
+                        <h6 class="lead d-inline-block">
+                            <strong>Precio: </strong>
+                            $1.200.000
+                        </h6>
+                            
+                        <h6 class="lead d-inline-block">
+                            <strong>Año: </strong>
+                            2019
+                        </h6>
+
+                    </div>
+                    <button class="btn btn-outline-danger btn-sm">Eliminar</button>
+                </div>
+
+            </div>
 
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script src="app.js"></script>
 </body>
 </html>
